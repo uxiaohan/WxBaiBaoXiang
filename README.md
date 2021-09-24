@@ -4,6 +4,12 @@
 
 ## 详情见博客 ->  [小韩的百宝箱微信小程序源码 开源](https://www.vvhan.com/WxApp-BaiBaoXiang.html ) 
 
+
+
+# 如果喜欢的话，动动小手，给个star 🌟 谢谢～
+
+
+
 ### 可以先体验一下
 
 ![小韩的百宝箱微信小程序](https://cdn.jsdelivr.net/gh/uxiaohan/WxBaiBaoXiang/qrcode.jpeg)
