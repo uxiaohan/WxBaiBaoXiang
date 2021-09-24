@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "彩虹屁屁",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  }
+}

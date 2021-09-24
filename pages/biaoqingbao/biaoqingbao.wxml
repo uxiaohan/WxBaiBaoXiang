@@ -1,0 +1,11 @@
+<view class="api_vvhan_com">
+	<van-popup show="{{show}}" bind:close="onClose">
+		<image class="viewimg" src="{{imgUrl}}" mode="widthFix" />
+		<van-button plain hairline type="primary" bindtap="saveImg">保存图片</van-button>
+	</van-popup>
+	<van-grid square column-num="3" border="false">
+		<van-grid-item use-slot wx:for="{{urlData}}">
+			<image class="kimg" bindtap="showPopup" data-hans="{{urlData[index]}}" src="{{urlData[index]}}" mode="widthFix" />
+		</van-grid-item>
+	</van-grid>
+</view>

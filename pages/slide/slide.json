@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "disableScroll": true,
+  "usingComponents": {
+    "back": "/components/back/back",
+    "g-modal": "/components/gui/modal/modal",
+    "g-tabs": "/components/gui/tabs/tabs",
+    "g-tab": "/components/gui/tab/tab"
+  }
+}

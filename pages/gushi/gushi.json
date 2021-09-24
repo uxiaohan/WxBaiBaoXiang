@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "睡前故事",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  }
+}

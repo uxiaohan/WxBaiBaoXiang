@@ -1,0 +1,15 @@
+<view class="api_vvhan_com">
+	<view class="content">
+		<view class="logo">
+			<image src="../../images/pengyouquan.png" mode="widthFix"></image>
+		</view>
+		<view class="texts">
+			<text>{{textData}}</text>
+		</view>
+	</view>
+	<view class="btns">
+		<van-button custom-class="thebtns" round icon="description" type="primary" bindtap="copyData">复制</van-button>
+		<van-button custom-class="thebtns" round icon="replay" type="info" bindtap="getData">换一个</van-button>
+	</view>
+	<!-- <view class="gg"><ad unit-id="adunit-05900c8873a493a2"></ad></view> -->
+</view>

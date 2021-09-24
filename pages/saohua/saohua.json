@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "你好污呀",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  }
+}

@@ -1,0 +1,31 @@
+<view class="api_vvhan_com">
+	<van-dialog id="van-dialog" />
+	<view class="logo">
+		<image src="/images/wylogo.png" mode="widthFix"></image>
+	</view>
+	<view class="main">
+		<van-field label="{{one}}" disabled="{{orJz}}" placeholder="{{three}}" bindinput="userName" />
+		<van-field label="{{two}}" disabled="{{orJz}}" type="password" placeholder="{{four}}" bindinput="passWord" />
+		<block wx:if="{{orJz}}">
+			<view class="login">
+				<van-button bindtap="loginUser" plain custom-class="btnone" type="info" disabled="{{orLoad}}" loading="{{orLoad}}" loading-text="正在打卡...">一键打卡</van-button>
+				<van-button bindtap="chongXin" plain custom-class="chongxin btnone" type="warning">重新输入</van-button>
+			</view>
+		</block>
+		<block wx:else>
+			<view class="logins">
+				<van-button custom-class="btntwo" bindtap="loginUser" plain type="info" disabled="{{orLoad}}" loading="{{orLoad}}" loading-text="正在打卡...">一键打卡</van-button>
+			</view>
+		</block>
+	</view>
+	<view class="tag">
+		<van-tag mark size="large" type="success">Q:我的账号安全吗？</van-tag>
+		<van-tag plain size="medium" type="success">A:密码是MD5加密直接传输网易云，无需担心安全问题。</van-tag>
+		<van-tag mark size="large" color="#9370DB">Q:这个程序是干嘛的？</van-tag>
+		<van-tag plain size="medium" color="#9370DB">A:网易云一键签到，一键听满300首歌，刷等级。</van-tag>
+		<van-tag mark size="large" color="#ff976a">Q:使用这个会影响我的听歌风格吗？</van-tag>
+		<van-tag plain size="medium" color="#ff976a">A:刷的歌都来自您的每日推荐歌单，不影响。</van-tag>
+		<van-tag mark size="large" color="#778899">Q:为什么点击刷歌打卡只能刷300首？</van-tag>
+		<van-tag plain size="medium" color="#778899">A:网易云音乐官方每天最多刷300首</van-tag>
+	</view>
+</view>

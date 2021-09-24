@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "精神语录",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  }
+}

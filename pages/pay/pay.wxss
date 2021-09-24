@@ -1,0 +1,76 @@
+.api_vvhan_com {
+  width: 100vw;
+  min-height: 100vh;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.logo {
+  padding: 56rpx 0rpx 46rpx 0rpx;
+  width: 100vw;
+  text-align: center;
+}
+
+.logo image {
+  width: 86%;
+}
+
+.van-uploader {
+  text-align: center;
+}
+
+.van-uploader button {
+  margin-left: 10vw;
+  width: 80vw;
+  margin-top: 16rpx;
+}
+
+.van-tab__pane {
+  text-align: center;
+}
+
+.van-tab__pane image {
+  max-width: 300rpx !important;
+}
+
+.imgyangshi {
+  margin: auto;
+  margin-top: 26rpx;
+  width: 80vw;
+}
+
+.btns {
+  text-align: center;
+}
+
+.shengcheng {
+  width: 80vw;
+  margin: 26rpx 0rpx 36rpx 0rpx;
+}
+
+.inqq {
+  padding: 0px;
+  margin: auto;
+  width: 80vw;
+}
+
+.van-popup {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.van-button--plain {
+  margin-top: 36rpx;
+  width: 565rpx;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.van-grid-item__content {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.savabtn {
+  margin-top: 56rpx;
+  width: 100%;
+}

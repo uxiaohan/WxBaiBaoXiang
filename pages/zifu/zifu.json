@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "字符表情",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  }
+}

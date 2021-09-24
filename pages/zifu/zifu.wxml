@@ -1,0 +1,65 @@
+<view class="container">
+	<view class="top-banner-bg">
+		<view class="weui-text-bar">
+			<view class="weui-text-bar__form">
+				<view class="weui-text-bar__box">
+					<view bindtap="" class="weui-text-bar__cancel-btn">{{textareaValue}}</view>
+				</view>
+			</view>
+			<view>
+				<van-button custom-class="clearInput" bindtap="clearInput" type="primary" plain size="small">清空输入</van-button>
+				<van-button custom-class="textCopy" bindtap="textCopy" type="info" plain size="small">点我复制</van-button>
+			</view>
+		</view>
+	</view>
+	<scroll-view scrollY style="height: calc(100% - 300rpx);position:fixed; bottom: 0;left: 0;">
+		<view class="bottom-change-list">
+			<view class="add">
+				<ad unitId="{{config.vad}}" wx:if="{{config.vad&&config.adon!=0}}"></ad>
+			</view>
+			<view class="swiper-tab" style="white-space:nowrap;display:flex">
+				<view bindtap="changeTab" class="swiper-tab-item {{activeIndex==0?'active':''}}" data-index="0">表情库</view>
+				<view bindtap="changeTab" class="swiper-tab-item {{activeIndex==1?'active':''}}" data-index="1">字符库</view>
+				<view bindtap="changeTab" class="swiper-tab-item {{activeIndex==2?'active':''}}" data-index="2">颜文字</view>
+			</view>
+			<swiper bindchange="swiperTab" current="{{activeIndex}}">
+				<swiper-item>
+					<view class="zf-li" wx:for="{{bqdata}}" wx:for-item="i" wx:key="i">
+						<view class="zf__title">{{i.class}}</view>
+						<view class="zf__box">
+							<button bindtap="addText" id="{{j}}" wx:for="{{i.datalist}}" wx:for-item="j" wx:key="j">{{j}}</button>
+						</view>
+						<view class="clear"></view>
+					</view>
+					<view class="add">
+						<ad unitId="{{config.vad}}" wx:if="{{config.vad&&config.adon!=0}}"></ad>
+					</view>
+				</swiper-item>
+				<swiper-item>
+					<view class="zf-li" wx:for="{{zfdata}}" wx:for-item="i" wx:key="i">
+						<view class="zf__title">{{i.class}}</view>
+						<view class="zf__box">
+							<button bindtap="addText" id="{{j}}" wx:for="{{i.datalist}}" wx:for-item="j" wx:key="j">{{j}}</button>
+						</view>
+						<view class="clear"></view>
+					</view>
+					<view class="add">
+						<ad unitId="{{config.vad}}" wx:if="{{config.vad&&config.adon!=0}}"></ad>
+					</view>
+				</swiper-item>
+				<swiper-item>
+					<view class="zf-li" wx:for="{{ywzdata}}" wx:for-item="i" wx:key="i">
+						<view class="bottom-change-list__title">{{i.class}}</view>
+						<view class="bottom-change-list__box">
+							<button bindtap="addText" id="{{j}}" wx:for="{{i.datalist}}" wx:for-item="j" wx:key="j">{{j}}</button>
+						</view>
+						<view class="clear"></view>
+					</view>
+					<view class="add">
+						<ad unitId="{{config.vad}}" wx:if="{{config.vad&&config.adon!=0}}"></ad>
+					</view>
+				</swiper-item>
+			</swiper>
+		</view>
+	</scroll-view>
+</view>

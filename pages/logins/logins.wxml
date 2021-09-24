@@ -1,0 +1,43 @@
+<view class="hans-page">
+	<van-dialog id="van-dialog" />
+	<van-toast id="van-toast" />
+	<view wx-if="{{loginShow}}">
+		<view class="user">
+			<view class="avatar">
+				<image src="{{userAvater}}" mode="widthFix"></image>
+			</view>
+			<view>
+				<van-tag plain type="primary" custom-class="vips">ID:{{theIds}}</van-tag>
+				<text>　</text>
+				<van-tag plain color="{{theColor}}" custom-class="vips">{{theNick}}</van-tag>
+				<text>　</text>
+				<van-tag color="{{theBacColor}}" text-color="{{theTxtColor}}" custom-class="vips">SVIP</van-tag>
+			</view>
+			<view class="nickname">
+				<text>{{userNick}}</text>
+			</view>
+		</view>
+		<view style="display:{{logHight}}">
+			<view class="btnviews">
+				<view class="hans-btns">
+					<van-button loading-text="小韩君努力中..." disabled="{{btnLoading}}" loading="{{btnLoading}}" plain type="primary" bindtap="hansLogin">确认登录</van-button>
+				</view>
+				<view class="hans-btns">
+					<van-button plain type="info" bindtap="goHone">取消</van-button>
+				</view>
+			</view>
+		</view>
+		<view class="loginok" style="display:{{logOk}}">
+			<view class="logtext"><text>已成功登录</text></view>
+			<view class="hans-btns">
+				<van-button plain type="primary" bindtap="goHone">我知道啦</van-button>
+			</view>
+		</view>
+	</view>
+	<view class="hans-sq" wx:else="{{loginShow}}">
+		<image class="logo" src="../../images/login.png" mode="widthFix"></image>
+		<view class="hans-btns">
+			<van-button plain type="info" open-type="getUserInfo" bindgetuserinfo="getUserInfos">授权登录</van-button>
+		</view>
+	</view>
+</view>

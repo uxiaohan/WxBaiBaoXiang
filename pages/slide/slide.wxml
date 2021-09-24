@@ -1,0 +1,70 @@
+<video loop controls="{{false}}" direction="0" enableProgressGesture="{{false}}" id="bg-video" objectFit="fill" showCenterPlayBtn="{{false}}" showPlayBtn="{{false}}" src="../../images/video.mp4">
+	<cover-view bindtap="togglePage" hidden="{{pagestate}}" id="video-view">
+		<cover-view class="slide-box">
+			<cover-view class="slide-bar {{slidedata.item[slidedata.cur].inclass}} {{fontfamily.item[fontfamily.cur].family}}" style="{{slidedata.cur==1?'margin-top: -'+sizedata.item[sizedata.cur].size/2+20+'rpx;':''}}width:{{slidedata.cur==0?sizedata.item[sizedata.cur].size:sizedata.item[sizedata.cur].size*inTxt.length}}rpx;font-size:{{sizedata.item[sizedata.cur].size}}rpx; animation-duration:{{calcAnimate}}s;line-height:{{sizedata.item[sizedata.cur].size+30}}rpx;color:{{colordata.item[colordata.cur].color}};" wx:if="{{state.intxt}}">
+				<cover-view class="slide-txt" style="transform:rotate3d(0,0,1,{{angledata.item[angledata.cur].value}}deg);" wx:for="{{txtArray}}" wx:key="{{index}}">{{item}}</cover-view>
+			</cover-view>
+		</cover-view>
+	</cover-view>
+</video>
+<view class="page {{isIPX}} {{Android}}">
+	<view bindtap="togglePage" class="content" hidden="{{!pagestate}}">
+		<view class="top-bar fixed">
+			<page-title align="tl" isprev="{{false}}" sClass="custom-title" title="点击空白区域，进入、退出全屏"></page-title>
+		</view>
+		<view class="slide-box vertical">
+			<view class="slide-bar {{slidedata.item[slidedata.cur].inclass}} {{fontfamily.item[fontfamily.cur].family}}" style="width:{{slidedata.cur==0?sizedata.item[sizedata.cur].size:sizedata.item[sizedata.cur].size*inTxt.length}}rpx;font-size:{{sizedata.item[sizedata.cur].size}}rpx; animation-duration:{{calcAnimate}}s; line-height:{{sizedata.item[sizedata.cur].size+30}}rpx;color:{{colordata.item[colordata.cur].color}};" wx:if="{{state.intxt}}">
+				<view class="slide-txt" style="transform:rotate3d(0,0,1,{{angledata.item[angledata.cur].value}}deg);" wx:for="{{txtArray}}" wx:key="{{index}}">{{item}}</view>
+			</view>
+		</view>
+	</view>
+	<view class="bom-bar" hidden="{{!pagestate}}">
+		<view class="bom-set bom-one flex-bar" hidden="{{!state.bom}}" style="{{state.inset?'':'background:#000;'}}">
+			<view class="flex1">
+				<view class="border txt">
+					<input bindblur="inCheck" placeholder="请输入文字" type="text" value="{{inTxt}}"></input>
+				</view>
+			</view>
+			<view class="set-bar">
+				<text bindtap="toggleSet" class="border radius iconfont icon-set link">⚙</text>
+			</view>
+		</view>
+		<view class="bom-set bom-two" hidden="{{!state.inset}}">
+			<g-tabs scroll active="{{tabData.act}}" bindintap="inTapTab">
+				<g-tab key="{{item.value}}" value="{{item.value}}" wx:for="{{tabData.list}}" wx:key="{{index}}"></g-tab>
+			</g-tabs>
+			<view class="wrap">
+				<view class="item-btn" hidden="{{!(tabData.act=='字体')}}">
+					<text bindtap="inChoice" class="btn btn-s inline-block {{fontfamily.cur==index?'active':''}}" data-index="{{index}}" data-type="family" wx:for="{{fontfamily.item}}" wx:key="{{index}}">{{item.value}}</text>
+				</view>
+				<scroll-view scrollX class="scroll-x alone-scrollx" hidden="{{!(tabData.act=='常用语')}}">
+					<view class="item-btn wrap-tb">
+						<view bindtap="inToggleModal" class="btn btn-s inline-block">添加</view>
+						<view class="inline-block operate-bar" wx:for="{{textdata.item}}" wx:key="{{index}}">
+							<text bindtap="inChoice" class="btn btn-s alone-btns inline-block" data-index="{{index}}" data-type="text">{{item.value}}</text>
+							<text catchtap="inDelTxt" class="iconfont icon-error operate-close" data-index="{{index}}"></text>
+						</view>
+					</view>
+				</scroll-view>
+				<view class="item-btn" hidden="{{!(tabData.act=='速度')}}">
+					<text bindtap="inChoice" class="btn btn-s inline-block {{speeddata.cur==index?'active':''}}" data-index="{{index}}" data-type="speed" wx:for="{{speeddata.item}}" wx:key="{{index}}">{{item.value}}</text>
+				</view>
+				<view class="item-btn" hidden="{{!(tabData.act=='字号')}}">
+					<text bindtap="inChoice" class="btn btn-s inline-block {{sizedata.cur==index?'active':''}}" data-index="{{index}}" data-type="size" wx:for="{{sizedata.item}}" wx:key="{{index}}">{{item.value}}</text>
+				</view>
+				<scroll-view scrollX class="scroll-x item-color" hidden="{{!(tabData.act=='颜色')}}">
+					<text bindtap="inChoice" class="color {{colordata.cur==index?'active':''}}" data-index="{{index}}" data-type="color" style="background-color:{{item.color}};" wx:for="{{colordata.item}}" wx:key="{{index}}"></text>
+				</scroll-view>
+				<view class="item-btn" hidden="{{!(tabData.act=='文字方向')}}">
+					<text bindtap="inChoice" class="btn btn-s inline-block {{angledata.cur==index?'active':''}}" data-index="{{index}}" data-type="angle" wx:for="{{angledata.item}}" wx:key="{{index}}">{{item.value}}°</text>
+				</view>
+				<view class="item-btn" hidden="{{!(tabData.act=='滚动方向')}}">
+					<text bindtap="inChoice" class="btn btn-s alone-btns inline-block {{slidedata.cur==index?'active':''}}" data-index="{{index}}" data-type="slide" wx:for="{{slidedata.item}}" wx:key="{{index}}">{{item.value}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+<g-modal bindincancel="inToggleModal" bindinsuccess="inToggleModal" gClass="modal-txt" show="{{modalTxt.state}}">
+	<textarea fixed bindinput="inTextareaChange" class="modal-textarea" focus="{{modalTxt.state}}" placeholder="请输入常用语" value="{{modalTxt.textarea}}"></textarea>
+</g-modal>

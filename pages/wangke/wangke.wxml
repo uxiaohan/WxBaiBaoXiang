@@ -1,0 +1,24 @@
+<view class="api_vvhan_com">
+	<view class="logo">
+		<image src="/images/wangkelogo.png" mode="widthFix" />
+	</view>
+	<view class="inputs">
+		<van-cell-group>
+			<van-field value="{{txtData}}" bind:change="onChange" type="textarea" placeholder="请输入题目" autosize border show-confirm-bar />
+		</van-cell-group>
+	</view>
+	<view class="btns">
+		<van-button plain hairline type="primary" bindtap="pastText">粘贴问题</van-button>
+		<van-button custom-class="center" plain hairline type="warning" bindtap="qingText">清空</van-button>
+		<van-button custom-class="right" plain hairline type="info" bindtap="souTi">搜索答案</van-button>
+	</view>
+	<van-divider contentPosition="center">答案</van-divider>
+	<view class="answer">
+		<view class="copy">
+			<van-button custom-class="right" size="small" type="info" bindtap="copyText">复制答案</van-button>
+		</view>
+		<view class="anstxt">
+			<text>{{daData}}</text>
+		</view>
+	</view>
+</view>

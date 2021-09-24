@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "土味情话",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  }
+}

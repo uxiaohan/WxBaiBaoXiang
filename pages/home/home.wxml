@@ -1,0 +1,82 @@
+<van-notice-bar custom-class="gonggao" speed="28" left-icon="volume-o" text="{{homeTip}}" />
+<view class="api_vvhan_com">
+	<van-dialog id="van-dialog" />
+	<van-grid square column-num="4" gutter="6">
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/wangke/wangke">
+			<image class="kimg" src="/images/wangke.png" mode="widthFix" />
+			<text class="ktxt">网课搜题帮</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/pengyouquan/pengyouquan">
+			<image class="kimg" src="/images/pengyouquan.png" mode="widthFix" />
+			<text class="ktxt">心情文案集</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/biaoqingbao/biaoqingbao">
+			<image class="kimg" src="/images/biaoqingbao.png" mode="widthFix" />
+			<text class="ktxt">斗图神器库</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/touxiang/touxiang">
+			<image class="kimg" src="/images/touxiang.png" mode="widthFix" />
+			<text class="ktxt">头像收集库</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/wyqian/wyqian">
+			<image class="kimg" src="/images/wyqian.png" mode="widthFix" />
+			<text class="ktxt">网易云签到</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/pay/pay">
+			<image class="kimg" src="/images/pay.png" mode="widthFix" />
+			<text class="ktxt">三合一收款</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/bizhi/bizhi">
+			<image class="kimg" src="/images/bizhi.png" mode="widthFix" />
+			<text class="ktxt">手机壁纸库</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/slide/slide">
+			<image class="kimg" src="/images/gundong.png" mode="widthFix" />
+			<text class="ktxt">滚动大字幕</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/jiugongge/jiugongge">
+			<image class="kimg" src="/images/jiugongge.png" mode="widthFix" />
+			<text class="ktxt">九宫格切图</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/erweima/erweima">
+			<image class="kimg" src="/images/erweima.png" mode="widthFix" />
+			<text class="ktxt">二维码生成</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/zifu/zifu">
+			<image class="kimg" src="/images/biaoqing.png" mode="widthFix" />
+			<text class="ktxt">字符表情库</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/jitang/jitang">
+			<image class="kimg" src="/images/dujitang.png" mode="widthFix" />
+			<text class="ktxt">心灵鸡汤库</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/tiangou/tiangou">
+			<image class="kimg" src="/images/tiangou.png" mode="widthFix" />
+			<text class="ktxt">舔狗日记库</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/caihongpi/caihongpi">
+			<image class="kimg" src="/images/caihongpi.png" mode="widthFix" />
+			<text class="ktxt">彩虹屁大全</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/qinghua/qinghua">
+			<image class="kimg" src="/images/qinghua.png" mode="widthFix" />
+			<text class="ktxt">土味情话库</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/jingshen/jingshen">
+			<image class="kimg" src="/images/jingshen.png" mode="widthFix" />
+			<text class="ktxt">精神语录库</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/saohua/saohua">
+			<image class="kimg" src="/images/wu.png" mode="widthFix" />
+			<text class="ktxt">你好污呀呀</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/wangyiping/wangyiping">
+			<image class="kimg" src="/images/wangyiyun.png" mode="widthFix" />
+			<text class="ktxt">网易云热评</text>
+		</van-grid-item>
+		<van-grid-item use-slot link-type="navigateTo" url="/pages/gushi/gushi">
+			<image class="kimg" src="/images/gushi.png" mode="widthFix" />
+			<text class="ktxt">睡前小故事</text>
+		</van-grid-item>
+	</van-grid>
+</view>

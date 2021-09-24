@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "心灵鸡汤",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  }
+}

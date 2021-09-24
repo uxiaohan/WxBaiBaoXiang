@@ -1,0 +1,50 @@
+.api_vvhan_com {
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.logo {
+  margin-top: 36rpx;
+  text-align: center;
+}
+
+.logo image {
+  width: 66vw;
+}
+
+.inputs {
+  margin-top: 56rpx;
+}
+
+.btns {
+  padding: var(--cell-vertical-padding, 10px) var(--cell-horizontal-padding, 16px);
+  margin: auto;
+}
+
+.btns button {
+  width: 27%;
+}
+
+.center {
+  width: 10%;
+  margin-left: 9%;
+}
+
+.right {
+  float: right;
+}
+
+.answer {
+  margin-top: 36rpx;
+  padding: var(--cell-vertical-padding, 10px) var(--cell-horizontal-padding, 16px);
+}
+
+.copy {
+  width: 100%;
+  height: var(--button-small-height, 30px);
+  margin-bottom: 16rpx;
+}
+
+.anstxt {
+  font-size: small;
+}

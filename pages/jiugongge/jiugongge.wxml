@@ -1,0 +1,14 @@
+<view class='sudoku'>
+	<scroll-view scroll-x scroll-y class='canvas-box'>
+		<canvas canvas-id='canvasIn' id='canvas' class='canvas canvas-in' style='{{canvasWH}}'></canvas>
+	</scroll-view>
+	<cover-view class='imgs'>
+		<cover-view class='imgs-box'>
+			<cover-image class='img' data-idx='{{index+1}}' src='{{item}}' style='{{maxHeight}}' wx:for='{{imgUrls}}' wx:key='{{index}}' bindtap='saveImg'></cover-image>
+		</cover-view>
+	</cover-view>
+	<cover-view class='btns-box'>
+		<button bindtap='uploadImg' class='btn btn-cut'>上传</button>
+		<button bindtap='saveAll' class='btn btn-save'>保存</button>
+	</cover-view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "舔狗日记",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/mine/mine",
+    "pages/tiangou/tiangou",
+    "pages/jitang/jitang",
+    "pages/caihongpi/caihongpi",
+    "pages/qinghua/qinghua",
+    "pages/pengyouquan/pengyouquan",
+    "pages/saohua/saohua",
+    "pages/jingshen/jingshen",
+    "pages/wangyiping/wangyiping",
+    "pages/gushi/gushi",
+    "pages/touxiang/touxiang",
+    "pages/bizhi/bizhi",
+    "pages/biaoqingbao/biaoqingbao",
+    "pages/slide/slide",
+    "pages/zifu/zifu",
+    "pages/wyqian/wyqian",
+    "pages/erweima/erweima",
+    "pages/jiugongge/jiugongge",
+    "pages/wangke/wangke",
+    "pages/logins/logins",
+    "pages/pay/pay",
+    "pages/coolcard/coolcard"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6495ED",
+    "navigationBarTitleText": "小韩的百宝箱",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/homeon.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/useron.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

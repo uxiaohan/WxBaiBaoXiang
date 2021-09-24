@@ -1,0 +1,37 @@
+<view class="api_vvhan_com">
+	<block wx:if="{{loginShow}}">
+		<view class="logo">
+			<image src="../../images/logo.png" mode="widthFix"></image>
+		</view>
+		<view class="user">
+			<view class="avatar">
+				<image src="{{userAvater}}" mode="widthFix"></image>
+			</view>
+			<view>
+				<van-tag plain type="primary" custom-class="vips">ID:{{theIds}}</van-tag>
+				<text>　</text>
+				<van-tag plain color="{{theColor}}" custom-class="vips">{{theNick}}</van-tag>
+				<text>　</text>
+				<van-tag color="{{theBacColor}}" text-color="{{theTxtColor}}" custom-class="vips">SVIP</van-tag>
+			</view>
+			<view class="nickname">
+				<text>{{userNick}}</text>
+			</view>
+		</view>
+		<view class="endbtns">
+			<van-button plain hairline type="primary" open-type="feedback">问题反馈</van-button>
+			<van-button plain hairline type="info" open-type="contact">联系客服</van-button>
+			<van-button plain hairline type="warning" data-src="https://www.vvhan.com/HanWxApi/GongJuWxApp/img/zanshang.png" bindtap="previewImage">打赏小韩</van-button>
+		</view>
+	</block>
+	<block wx:else>
+		<view class="login">
+			<view class="logo">
+				<image src="../../images/logo.png" mode="widthFix"></image>
+			</view>
+			<view class="loginbtn">
+				<van-button plain type="info" open-type="getUserInfo" bindgetuserinfo="getUserInfos">点击登录</van-button>
+			</view>
+		</view>
+	</block>
+</view>

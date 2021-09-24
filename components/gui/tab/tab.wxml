@@ -1,0 +1,2 @@
+<view bindtap="inTap" class="g-class g-tab-item {{checked?'g-tab-active':''}}" style="{{checked&&activeColor?'color:'+activeColor:''}}">{{value}}<view class="b-class g-border" hidden="{{!checked}}" style="{{checked&&activeColor?'border-color:'+activeColor:''}}"></view>
+</view>

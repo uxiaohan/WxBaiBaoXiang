@@ -1,0 +1,19 @@
+<view class="api_vvhan_com">
+	<van-popup show="{{show}}" bind:close="onClose">
+		<image class="viewimg" src="{{imgUrl}}" mode="widthFix" />
+		<van-button plain hairline type="primary" bindtap="saveImg">保存图片</van-button>
+	</van-popup>
+	<van-grid square column-num="{{lieshu}}" border="false">
+		<van-grid-item use-slot wx:for="{{urlData}}">
+			<image class="kimg" bindtap="showPopup" data-hans="{{urlData[index]}}" src="{{urlData[index]}}" mode="widthFix" />
+		</van-grid-item>
+	</van-grid>
+	<van-tabbar active="{{ active }}" bind:change="onChange">
+		<van-tabbar-item icon="hot">精选</van-tabbar-item>
+		<van-tabbar-item icon="diamond">男生</van-tabbar-item>
+		<van-tabbar-item icon="gem">女生</van-tabbar-item>
+		<van-tabbar-item icon="smile">动漫</van-tabbar-item>
+		<van-tabbar-item icon="like">景物</van-tabbar-item>
+		<van-tabbar-item icon="star">情侣</van-tabbar-item>
+	</van-tabbar>
+</view>

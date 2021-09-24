@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "斗图神器",
+  "usingComponents": {
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-button": "@vant/weapp/button/index"
+  }
+}

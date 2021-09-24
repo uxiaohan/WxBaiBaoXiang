@@ -1,0 +1,17 @@
+.g-tab-item {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding: 0 20rpx;
+    font-size: 22rpx;
+    min-width: 120rpx;
+    text-align: center;
+    box-sizing: border-box;
+    color: hsla(0,0%,100%,.5);
+}
+
+.g-tab-active {
+    color: hsla(0,0%,100%,.9);
+    background-color: hsla(0,0%,100%,.1);
+}

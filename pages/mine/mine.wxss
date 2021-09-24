@@ -1,0 +1,65 @@
+.api_vvhan_com {
+  width: 100vw;
+  min-height: 100vh;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.logo {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.logo image {
+  padding-top: 86rpx;
+  width: 68%;
+}
+
+.login {
+  margin-top: 156rpx;
+}
+
+.loginbtn {
+  margin-top: 156rpx;
+  text-align: center;
+  font-weight: bold;
+}
+
+.loginbtn button {
+  width: 80%;
+}
+
+.user {
+  text-align: center;
+  margin-top: 56rpx;
+}
+
+.user image {
+  width: 26%;
+  border-radius: 100%;
+}
+
+.avatar {
+  padding: 0rpx 0rpx 16rpx 0rpx;
+}
+
+.nickname {
+  font-size: large;
+  font-weight: bold;
+  padding-top: 16rpx;
+}
+
+.endbtns {
+  text-align: center;
+  margin-top: 108rpx;
+}
+
+.endbtns button {
+  width: 56%;
+  margin-top: 26rpx;
+}
+
+.vips {
+  font-weight: bold;
+}

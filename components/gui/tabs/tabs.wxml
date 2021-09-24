@@ -1,0 +1,8 @@
+<scroll-view scrollX class="g-class g-scroll" wx:if="{{scroll}}">
+    <view class="g-tabs">
+        <slot></slot>
+    </view>
+</scroll-view>
+<view class="g-class g-tabs g-space-around" wx:else>
+    <slot></slot>
+</view>

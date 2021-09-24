@@ -1,0 +1,32 @@
+.api_vvhan_com {
+  width: 100vw;
+  min-height: 100vh;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.kimg {
+  width: 100% !important;
+}
+
+.viewimg {
+  text-align: center;
+  width: 566rpx !important;
+  /* margin: -36rpx; */
+}
+
+.van-popup {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.van-button--plain {
+  margin-top: 36rpx;
+  width: 565rpx;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.van-grid-item__content {
+  padding: 0px !important;
+  margin: 0px !important;
+}

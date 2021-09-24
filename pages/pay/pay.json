@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "三合一收款码",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-field": "@vant/weapp/field/index"
+  }
+}

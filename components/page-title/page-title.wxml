@@ -1,0 +1,4 @@
+<view class="g-class page-title {{isprev?'return-prev':''}} {{align}} {{color}}" style="{{customStyle}}">
+    <text class="strong s-class">{{title}}</text>
+    <view bindtap="inTap" class="page-icon ico-arrow arrow-left" wx:if="{{isprev}}"></view>
+</view>

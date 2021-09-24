@@ -1,0 +1,49 @@
+.api_vvhan_com {
+  width: 100vw;
+  min-height: 100vh;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+.logo {
+  padding: 56rpx 0rpx 86rpx 0rpx;
+  width: 100vw;
+  text-align: center;
+}
+
+.tag {
+  margin: 86rpx 0rpx 0rpx 16px;
+}
+
+.main input {
+  text-align: center;
+}
+
+.van-tag--plain {
+  margin-bottom: 36rpx;
+}
+
+.logo image {
+  width: 86%;
+}
+
+.login {
+  margin: auto;
+  width: calc(100% - 32px);
+}
+
+.logins {
+  text-align: center;
+}
+
+.btnone {
+  width: 36%;
+}
+
+.btntwo {
+  width: calc(100% - 32px);
+}
+
+.chongxin {
+  float: right;
+}

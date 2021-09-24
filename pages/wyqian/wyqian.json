@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "网易云音乐打卡",
+  "usingComponents": {
+    "van-tag": "@vant/weapp/tag/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-dialog": "@vant/weapp/dialog/index"
+  }
+}

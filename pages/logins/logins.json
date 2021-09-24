@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-tag": "@vant/weapp/tag/index"
+  }
+}

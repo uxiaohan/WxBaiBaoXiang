@@ -1,0 +1,47 @@
+./wuBaseWxss/1.wxss.border {
+    position: relative;
+}
+
+.border:after {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #fff;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.border.radius:after {
+    border-radius: 50%;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2) {
+    .border:after {
+        transform: scale(.5);
+    }
+}
+
+.opacity:active {
+    opacity: .7;
+}
+
+.icon-home {
+    display: inline-block;
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin-right: 20rpx;
+    font-size: 36rpx;
+    text-align: center;
+}
+
+.small {
+    font-size: 32rpx;
+    width: 68rpx;
+    height: 68rpx;
+    line-height: 68rpx;
+}

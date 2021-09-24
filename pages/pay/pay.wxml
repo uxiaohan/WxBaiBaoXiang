@@ -1,0 +1,76 @@
+<view class="api_vvhan_com">
+	<van-popup show="{{show}}" bind:close="onClose">
+		<image class="viewimg" src="data:image/png;base64,{{imgss}}" mode="widthFix" />
+		<van-button type="primary" bindtap="saveImg" custom-class="savabtn">保存图片</van-button>
+	</van-popup>
+	<van-toast id="van-toast" />
+	<view class="logo">
+		<image src="/images/qrpaylogo.png" mode="widthFix"></image>
+	</view>
+	<view class="main">
+		<view class="inqq">
+			<van-cell-group>
+				<van-field value="{{ username }}" required clearable label="QQ:" placeholder="用于显示QQ头像" bind:change="qqChange" />
+			</van-cell-group>
+		</view>
+		<van-uploader bind:after-read="afterRead" name="qq">
+			<van-button icon="photo" type="warning">{{qqtxt}}</van-button>
+		</van-uploader>
+		<van-uploader bind:after-read="afterRead" name="wx">
+			<van-button icon="photo" type="primary">{{wxtxt}}</van-button>
+		</van-uploader>
+		<van-uploader bind:after-read="afterRead" name="zfb">
+			<van-button icon="photo" type="info">{{zfbtxt}}</van-button>
+		</van-uploader>
+	</view>
+	<van-tabs bind:change="onChange" custom-class="imgyangshi" active="{{ active }}" animated swipeable>
+		<van-tab title="样式1">
+			<image src="/images/qrimg/pikaqiu.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式2">
+			<image src="/images/qrimg/kanuobudingmao.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式3">
+			<image src="/images/qrimg/gongzhu.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式4">
+			<image src="/images/qrimg/huanyingdashang.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式5">
+			<image src="/images/qrimg/maomi.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式6">
+			<image src="/images/qrimg/longmao.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式7">
+			<image src="/images/qrimg/dongxue.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式8">
+			<image src="/images/qrimg/niannianyouyu.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式9">
+			<image src="/images/qrimg/baobei.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式10">
+			<image src="/images/qrimg/yitiji.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式11">
+			<image src="/images/qrimg/qitao.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式12">
+			<image src="/images/qrimg/qiuzanzhu.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式13">
+			<image src="/images/qrimg/toushi.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式14">
+			<image src="/images/qrimg/xiaohuangren.png" mode="widthFix"></image>
+		</van-tab>
+		<van-tab title="样式15">
+			<image src="/images/qrimg/yinlian.png" mode="widthFix"></image>
+		</van-tab>
+	</van-tabs>
+	<view class="btns">
+		<van-button custom-class="shengcheng" plain type="info" bindtap="hanMakeQr">点击生成</van-button>
+	</view>
+</view>

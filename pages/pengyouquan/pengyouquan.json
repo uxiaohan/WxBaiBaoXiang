@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "心情文案",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  }
+}

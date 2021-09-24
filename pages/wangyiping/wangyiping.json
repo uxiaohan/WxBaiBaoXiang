@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "网易热评",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index"
+  }
+}

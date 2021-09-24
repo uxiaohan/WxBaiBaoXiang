@@ -1,0 +1,1 @@
+<text bindtap="inBack" class="g-class iconfont icon-home border radius opacity {{size}}"></text>
